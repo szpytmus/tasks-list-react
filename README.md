@@ -4,23 +4,22 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Simple "to-do" tasks list with adding and removing new tasks features. Try and enjoy!
 
-![Tasks List](./images/sample.gif)
-
-
 ## Demo
 
-[Tasks List Demo](https://szpytmus.github.io/tasks-list/)
+[Tasks List Demo](https://szpytmus.github.io/tasks-list-react/)
 
 ### Used technologies
 
 1. HTML
 2. CSS with BEM convention
 3. Javascript
+4. React
+5. create-react-app
 
 
 ### Remarks
 
-Project #3. <br>
+Project #4. <br>
 
 Project made by Marcin Szpytma.
 ## Available Scripts
