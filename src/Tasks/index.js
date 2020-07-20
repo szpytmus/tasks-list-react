@@ -11,7 +11,7 @@ const Tasks = (props) => (
         <button className={`tasksList__button ${task.done ? "tasksList__button--checked" : ""}`}></button>
         <span className={`tasksList__content ${task.done ? "tasksList__content--done" : ""}`} > {task.content}</span>
         <button className="tasksList__button tasksList__button--remove"
-        onClick={() => removeTask(task.content)}
+       
         
         ></button>
       </li>))}
