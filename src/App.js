@@ -9,22 +9,30 @@ import Container from "./Container"
 
 function App() {
   const [hideDone, setHideDone] = useState(false);
-  const [tasks, setTasks] = useState(JSON.parse(localStorage.getItem("tasks"))
+  
+  const [tasks, setTasks] = useState(
+  JSON.parse(localStorage.getItem("tasks")) === null 
+  ? [] 
+  : JSON.parse(localStorage.getItem("tasks") )
+
   );
 
   useEffect(() => {
-    localStorage.setItem("tasks",JSON.stringify(tasks))
-  });
+    localStorage.setItem("tasks",JSON.stringify(tasks));
+  }, [tasks]);
 
   const toggleHideDone = () => {
     setHideDone(hideDone => !hideDone);
   };
 
   const removeTask = (id) => {
-    setTasks(tasks => tasks.filter(task => task.id !== id));
+    
+      setTasks(tasks => tasks.filter(task => task.id !== id));
+   
   };
 
   const toggleTaskDone = (id) => {
+   
     setTasks(tasks => tasks.map(task => {
       if (task.id === id) {
         return { ...task, done: !task.done };
@@ -32,17 +40,20 @@ function App() {
 
       return task;
     }))
+ 
   };
 
   const setAllDone = () => {
+    
     setTasks(tasks => tasks.map(task => ({
       ...task,
       done: true
     })));
-
+  
   };
 
   const addNewTask = (newTaskContent) => {
+    
     setTasks(tasks => [
       ...tasks,
       {
@@ -52,6 +63,7 @@ function App() {
 
       }
     ])
+  
   };
 
   return (
