@@ -10,6 +10,7 @@
     border:none;
     margin: 0 0 0 20px;
     transition: color 0.3s;
+    padding: 15px;
     
 }
 
@@ -24,11 +25,9 @@
 
 
 .buttons__button:hover {
-    height: 50px;
-    font-size: 20px;
+    transform:scale(1.1);
+    transition: 1s;
     background-color: hsl(180, 100%, 45%);
     color: white;
     border: none;
-    padding: 15px;
-    transition: 1s;
 }
