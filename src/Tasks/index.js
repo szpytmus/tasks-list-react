@@ -2,8 +2,9 @@ import React from "react";
 import { List, Item, Content, Button } from './styled';
 
 
+
 const Tasks = ({ tasks, hideDone, removeTask, toggleTaskDone }) => (
-  <List className="tasksList">
+  <List >
     {tasks.map(task => (
       <Item
         key={task.id}

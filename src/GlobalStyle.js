@@ -1,3 +1,7 @@
+import { createGlobalStyle } from 'styled-components';
+
+export const GlobalStyle = createGlobalStyle`
+
 html{
   box-sizing: border-box;
 }
@@ -8,14 +12,9 @@ html{
 
 body {
   font-family: 'Lato', sans-serif;
-  background-color: #eee;
+  background: ${({ theme }) => theme.color.gallery};
   font-size: 16px;
   padding: 10px;
 }
 
-.container{
-  width: 1000px;
-  max-width: 100%;
-  margin: 60px auto 0;
-  padding: 20px;
-}
+`;
