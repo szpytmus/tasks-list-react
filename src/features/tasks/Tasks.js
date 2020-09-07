@@ -5,20 +5,10 @@ import Buttons from "./Buttons"
 import Section from "../../common/Section"
 import Header from "../../common/Header"
 import Container from "../../common/Container"
-import { useTasks } from '../../useTasks.js'
 
 
 
 function Tasks() {
-
-  const { 
-    //tasks,
-    addNewTask, 
-    setAllDone, 
-    toggleTaskDone,  
-    removeTask,
-  } = useTasks();
-
 
   return (
     <Container>
@@ -27,21 +17,16 @@ function Tasks() {
 
       <Section
         title="Add new task"
-        body={<Form
-          addNewTask={addNewTask}
-        />}
+        body={<Form />}
       />
 
       <Section
         title="Tasks List"
         body={
-          <TaskList
-            removeTask={removeTask}
-            toggleTaskDone={toggleTaskDone} />
+          <TaskList/>
         }
         extraHeaderContent={
-          <Buttons
-            setAllDone={setAllDone} />
+          <Buttons/>
         }
       />
 
