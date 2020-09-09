@@ -8,13 +8,17 @@ Simple "to-do" tasks list with adding and removing new tasks features. Try and e
 
 [Tasks List Demo](https://szpytmus.github.io/tasks-list-react/)
 
-### Used technologies
+<strong>Tasks List Features</strong>
+
+![Tasks List](./public/sample.gif)
+
+### Known technologies
 
 1. HTML
 2. CSS with BEM convention
 3. Javascript
-4. React
-5. create-react-app
+4. React, create-react-app, custom Hooks
+5. Redux
 
 
 ### Remarks
