@@ -2,13 +2,13 @@ import React from 'react';
 import Form from "./Form"
 import TaskList from "./TaskList"
 import Buttons from "./Buttons"
-import Section from "../../common/Section"
-import Header from "../../common/Header"
-import Container from "../../common/Container"
+import Section from "../../../common/Section"
+import Header from "../../../common/Header"
+import Container from "../../../common/Container"
 
 
 
-function Tasks() {
+function TasksPage() {
 
   return (
     <Container>
@@ -35,4 +35,4 @@ function Tasks() {
   );
 }
 
-export default Tasks;
+export default TasksPage;
