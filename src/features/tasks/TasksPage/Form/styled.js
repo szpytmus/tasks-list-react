@@ -12,20 +12,6 @@ export const StyledForm = styled.form`
 
 `;
 
-export const Input = styled.input`
-    height: 50px;
-    border: 3px solid #eee;
-    padding-left: 10px;
-    margin-right: 20px;
-
-    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
-        margin-right: 0;
-        margin-bottom: 10px;
-        width: 100%;
-    }
-
-`;
-
 export const Button = styled.button`
     height: 50px;
     font-size: 20px;

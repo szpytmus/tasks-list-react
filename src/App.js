@@ -1,8 +1,9 @@
 import React from 'react';
-import { HashRouter, NavLink, Switch, Route, Redirect } from 'react-router-dom';
+import { HashRouter, Switch, Route, Redirect } from 'react-router-dom';
 import TasksPage from './features/tasks/TasksPage';
 import TaskPage from './features/tasks/TaskPage';
 import AuthorPage from './features/author/AuthorPage';
+import { StyledNavLink } from './styled';
 
 
 export default () => (
@@ -10,10 +11,10 @@ export default () => (
         <nav>
             <ul>
                 <li>
-                    <NavLink activeClassName="active" to="/tasks"> Tasks</NavLink>
+                    <StyledNavLink activeClassName="active" to="/tasks"> Tasks</StyledNavLink>
                 </li>
                 <li>
-                    <NavLink activeClassName="active" to="/author"> About Author</NavLink>
+                    <StyledNavLink activeClassName="active" to="/author"> About Author</StyledNavLink>
                 </li>
             </ul>
             <Switch>
