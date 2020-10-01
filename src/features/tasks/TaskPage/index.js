@@ -17,7 +17,7 @@ function TaskPage() {
           title={ task ? task.content : "Couldn't find this task 😥 "}
           body={!!task && (
           <>
-          <strong>Ukończono: </strong> {task.done ? "Yes" : "No"}
+          <strong>Finished: </strong> {task.done ? "Yes" : "No"}
           </>
           )}
         />

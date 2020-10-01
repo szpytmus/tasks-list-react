@@ -22,7 +22,7 @@ function TasksPage() {
       />
 
       <Section
-        title="Search:"
+        title="Search"
         body={<Search />}
       />
 
